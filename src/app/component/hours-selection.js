@@ -34,7 +34,7 @@ export default function HoursSelection() {
             <div className="font-medium text-[13px] text-secondary">{hour}</div>
           </div>
         </Menu.Button>
-        <Menu.Items className="dropdown-menu shadow-lg absolute -top-72 xl:top-[90px] left-1/2 xl:left-0 z-0 transform -translate-x-1/2 xl:-translate-x-0 text-sm w-full bg-white max-w-[332px] py-6 rounded-[10px]">
+        <Menu.Items className="dropdown-menu shadow-lg absolute -top-72 xl:top-[90px] left-1/2 xl:left-0 z-50 transform -translate-x-1/2 xl:-translate-x-0 text-sm w-full bg-white max-w-[332px] py-6 rounded-[10px]">
           {hours.map((hour, index) => (
             <div
               onClick={() => setHour(hour)}
