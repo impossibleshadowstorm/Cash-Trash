@@ -2,7 +2,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "../styles";
-import { staggerContainer, fadeIn, planetVariants, textContainer, textVariant2 } from "../../utils/motion";
+import {
+  staggerContainer,
+  fadeIn,
+  planetVariants,
+  textContainer,
+  textVariant2,
+} from "../../utils/motion";
 
 const TypingText = ({ title, textStyles }) => (
   <motion.p
@@ -48,17 +54,17 @@ const startingFeatures = [
 ];
 
 const GetStarted = () => (
-  <section className={`${styles.paddings} relative -z-2 bg-[white]`}>
+  <section className={"sm:p-16 xs:p-8 px-6 py-12 relative -z-2 bg-[white]"}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+      className={"2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row flex-col gap-8"}
     >
       <motion.div
         variants={planetVariants("left")}
-        className={`flex-1 ${styles.flexCenter}`}
+        className={"flex-1 flex justify-center items-center"}
       >
         <Image
           src="/images/eco.png"
