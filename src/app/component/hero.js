@@ -77,7 +77,7 @@ export default function Hero() {
       </div>
       <div>
         {searchActive ? (
-          <div className="fixed top-[90px] z-10 w-full max-w-[1920px]">
+          <div className="fixed top-[90px] z-10 w-full max-w-[1920px] z-50">
             <Search />
           </div>
         ) : (

@@ -5,6 +5,7 @@ import Footer from "./component/footer";
 import BackToTopBtn from "./component/back-to-top-btn";
 import Cta from "./component/cta";
 import GetStarted from "./component/get-started";
+import Services from "./component/services";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <div className="h-[90px] w-[100vw] bg-[#fff]"></div>
       <GetStarted />
+      <Services/>
       <AboutUs />
       <Cta />
       <Footer />
