@@ -14,6 +14,7 @@ export default function Home() {
       <Hero />
       <div className="h-[90px] w-[100vw] bg-[#fff]"></div>
       <GetStarted />
+      <div className="h-[90px] w-[100vw] bg-[#fff]"></div>
       <Services/>
       <AboutUs />
       <Cta />

@@ -3,11 +3,6 @@ import { motion } from "framer-motion";
 import {
   staggerContainer,
   fadeIn,
-  planetVariants,
-  textContainer,
-  textVariant2,
-  slideIn,
-  navVariants,
 } from "../../utils/motion";
 
 export default function Services() {
@@ -20,13 +15,13 @@ export default function Services() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className={`2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row flex-col gap-8`}
+          className={`2xl:max-w-[1280px] w-full mx-auto flex xl:flex-row lg:flex-row flex-col gap-8`}
         >
           {/* First Div */}
           <motion.div
             variants={fadeIn("down", "tween", 0.2, 1)}
             className={
-              "flex-1 flex justify-center items-center  bg-[] relative"
+              "flex-1 flex justify-center items-center  bg-[] relative xs:max-md:my-8"
             }
           >
             <div className="absolute">
@@ -56,11 +51,11 @@ export default function Services() {
               </p>
               <a
                 href="#_"
-                class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white  hover:bg-white group w-40"
+                class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white  hover:bg-white group w-40 xs:max-md:mt-16"
               >
                 <span class="w-48 h-48 rounded rotate-[-40deg] bg-[#F5D856] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
                 <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-black">
-                  See Deatils
+                  See Details
                 </span>
               </a>
             </div>
@@ -68,12 +63,12 @@ export default function Services() {
           {/* Second Div */}
           <motion.div
             variants={fadeIn("down", "tween", 0.2, 1)}
-            className="flex-1 flex justify-evenly items-center px-8 z-20"
+            className="flex-1 flex flex-row xs:max-sm:flex-col xs:max-sm:px-0 justify-evenly items-center px-8 z-20 xs:max-md:my-16"
           >
             <div className="w-1/2">
-              <div className="flex justify-center items-center ">
+              <div className="flex justify-center items-center">
                 <div className="relative bg-white py-6 px-6 w-full my-4 shadow-xl hover:bg-[#38685B] group">
-                  <div className=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-[#38685B] left-4 -top-6   ">
+                  <div className="text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-[#38685B] left-4 -top-6">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-8 w-8"
@@ -96,7 +91,7 @@ export default function Services() {
                     <div className="flex space-x-2 text-gray-400 text-sm my-2 ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 group-hover:text-white"
+                        className="h-5 w-5 text-primary group-hover:text-white"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -114,23 +109,17 @@ export default function Services() {
                           d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                         />
                       </svg>
-                      <p className="group-hover:text-white">Marketing Team</p>
+                      <p className="group-hover:text-white font-semibold text-primary">Marketing Team</p>
                     </div>
 
                     <div className="border-t-2"></div>
 
                     <div className="flex justify-between">
                       <div className="my-2">
-                        <p className=" text-sm group-hover:text-white">
+                        <p className=" text-sm text-primary group-hover:text-white">
                           The Kabadiwala as a registered PRO, official
                           collection & recycling partner helps in the compliance
-                          process of EPR. free pickup of 40+ recyclables The
-                          Kabadiwala as a registered PRO, official collection &
-                          recycling partner helps in the compliance process of
-                          EPR. free pickup of 40+ recyclables The Kabadiwala as
-                          a registered PRO, official collection & recycling
-                          partner helps in the compliance process of EPR. free
-                          pickup of 40+ recyclables
+                          process of EPR. free pickup of 40+ recyclables.
                         </p>
                       </div>
                     </div>
@@ -138,7 +127,7 @@ export default function Services() {
                 </div>
               </div>
               {/* second card */}
-              <div className="flex justify-center items-center ">
+              <div className="flex justify-center items-center">
                 <div className="relative bg-white py-6 px-6 w-full my-8 shadow-xl hover:bg-[#38685B] group">
                   <div className=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-[#38685B] left-4 -top-6   ">
                     <svg
@@ -163,7 +152,7 @@ export default function Services() {
                     <div className="flex space-x-2 text-gray-400 text-sm my-2 ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 group-hover:text-white"
+                        className="h-5 w-5 text-primary group-hover:text-white"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -181,14 +170,14 @@ export default function Services() {
                           d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                         />
                       </svg>
-                      <p className="group-hover:text-white">Marketing Team</p>
+                      <p className="group-hover:text-white font-semibold text-primary">Marketing Team</p>
                     </div>
 
                     <div className="border-t-2"></div>
 
                     <div className="flex justify-between">
                       <div className="my-2">
-                        <p className="text-sm text-primary text-semi-bold group-hover:text-white">
+                        <p className="text-sm text-primary group-hover:text-white">
                           The Kabadiwala as a registered PRO, official
                           collection & recycling partner helps in the compliance
                           process of EPR. free pickup of 40+ recyclables.
@@ -204,7 +193,7 @@ export default function Services() {
             {/* third card */}
             <div className="flex justify-center items-center w-1/2">
               <div className="relative bg-white py-6 px-6 w-full my-4 shadow-xl hover:bg-[#38685B] group">
-                <div className=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-[#38685B] left-4 -top-6   ">
+                <div className=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-[#38685B] left-4 -top-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8"
@@ -227,7 +216,7 @@ export default function Services() {
                   <div className="flex space-x-2 text-gray-400 text-sm my-2 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 group-hover:text-white"
+                      className="h-5 w-5 text-primary group-hover:text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -245,23 +234,17 @@ export default function Services() {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <p className="group-hover:text-white">Marketing Team</p>
+                    <p className="group-hover:text-white font-semibold text-primary">Marketing Team</p>
                   </div>
 
                   <div className="border-t-2"></div>
 
                   <div className="flex justify-between">
                     <div className="my-2">
-                      <p className=" text-sm group-hover:text-white">
+                      <p className=" text-sm text-primary group-hover:text-white">
                         The Kabadiwala as a registered PRO, official collection
                         & recycling partner helps in the compliance process of
-                        EPR. free pickup of 40+ recyclables The Kabadiwala as a
-                        registered PRO, official collection & recycling partner
-                        helps in the compliance process of EPR. free pickup of
-                        40+ recyclables The Kabadiwala as a registered PRO,
-                        official collection & recycling partner helps in the
-                        compliance process of EPR. free pickup of 40+
-                        recyclables
+                        EPR. free pickup of 40+ recyclables.
                       </p>
                     </div>
                   </div>
