@@ -6,6 +6,7 @@ import BackToTopBtn from "./component/back-to-top-btn";
 import Cta from "./component/cta";
 import GetStarted from "./component/get-started";
 import Services from "./component/services";
+import TrustedPartner from "./component/trusted-partner";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <div className="h-[90px] w-[100vw] bg-[#fff]"></div>
       <GetStarted />
       <div className="h-[90px] w-[100vw] bg-[#fff]"></div>
-      <Services/>
+      <Services />
+      <TrustedPartner />
       <AboutUs />
       <Cta />
       <Footer />
