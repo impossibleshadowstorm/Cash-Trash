@@ -9,7 +9,9 @@ const nextConfig = {
       "1000logos.net",
       "i.pinimg.com",
       "w7.pngwing.com",
-      "companieslogo.com,",
+      "companieslogo.com",
+      "www.freepnglogos.com",
+      "1000logos.net"
     ],
   },
 };
