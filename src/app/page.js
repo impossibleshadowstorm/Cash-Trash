@@ -8,6 +8,7 @@ import GetStarted from "./component/get-started";
 import Services from "./component/services";
 import TrustedPartner from "./component/trusted-partner";
 import LocateUs from "./component/locate-us";
+import Contact from "./component/contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Services />
       <TrustedPartner />
         <LocateUs />
+        <Contact/>
       <AboutUs />
       <Cta />
       <Footer />

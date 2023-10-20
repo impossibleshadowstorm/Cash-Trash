@@ -6,7 +6,7 @@ import Image from "next/image";
 const TrustedPartner = () => {
   return (
     <section className="relative h-[90vh]">
-      <div className={"sm:p-5 xs:p-3 px-2 h-[90vh] py-5 relative bg-primary"}>
+      <div className={"sm:p-5 xs:p-3 px-2 h-[90vh] py-5 relative bg-black"}>
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -22,42 +22,46 @@ const TrustedPartner = () => {
             <div class="grid grid-cols-4 gap-3 w-full">
               <div class="row-span-1 bg-[transparent] rounded-md h-20"></div>
               <div class="row-span-2 bg-[#fff] rounded-md h-40 flex flex-col items-center justify-center">
-                 <a
+                <a
                   href="#"
-                  className="group relative flex h-1/2 w-1/2 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2"
+                  className="group relative flex h-full w-9/12 items-end overflow-hidden rounded-lg bg-[white]  md:col-span-2"
                 >
                   <Image
-                    src="https://i.pinimg.com/564x/de/64/63/de646309009817507baf01587f107106.jpg"
+                    src="/images/reliance-industries-logo.png"
                     alt="Photo by Magicle"
-                    className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                    className="absolute inset-0 h-full w-1/2 object-cover object-center transition duration-200 group-hover:scale-110"
                     fill
-             
                     priority
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "contain" }}
                   />
-                
                 </a>
-                <span className="relative font-bold inline-block text-sm text-black md:text-lg">
-                  Reliance Industries
-                </span>
               </div>
               <div class="row-span-1 bg-[transparent] rounded-md h-20">
                 
               </div>
               <div class="row-span-1 rounded-md bg-[transparent] h-20"></div>
-              <div class="row-span-2 h-40 bg-[violet] rounded-md flex flex-col items-center justify-center">
-              <span className="relative font-bold inline-block text-sm text-white md:text-lg">
-                  Larsen & Tourbo
-                </span>
-                
+              <div class="row-span-2 h-40 bg-[white]  rounded-md flex flex-col items-center justify-center">
+                <a
+                  href="#"
+                  className="group relative flex h-full w-9/12 items-end overflow-hidden rounded-lg  md:col-span-2"
+                >
+                  <Image
+                    src="https://1000logos.net/wp-content/uploads/2020/07/Hershey-Logo.png"
+                    alt="Photo by Magicle"
+                    className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                    fill
+                    priority
+                    style={{ objectFit: "contain" }}
+                  />
+                </a>
               </div>
               <div class="row-span-1 bg-[#fff] h-20 rounded-md flex flex-col items-center justify-center">
-              <a
+                <a
                   href="#"
-                  className="group relative flex h-1/2 w-1/2 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2"
+                  className="group relative flex h-full w-full items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2"
                 >
                   <Image
-                    src="https://w7.pngwing.com/pngs/807/692/png-transparent-domino-s-pizza-pizza-delivery-food-event-marketing.png"
+                    src="https://www.freepnglogos.com/uploads/dominos-png-logo/dominos-pizza-readies-new-logo-png-10.png"
                     alt="Photo by Magicle"
                     className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                     fill
@@ -65,17 +69,14 @@ const TrustedPartner = () => {
                     style={{ objectFit: "contain" }}
                   />
                 </a>
-                <span className="relative font-bold inline-block text-sm text-black md:text-lg">
-                  Domino's
-                </span>
               </div>
               <div class="row-span-2 h-40 bg-[white] rounded-md flex flex-col items-center justify-center">
-              <a
+                <a
                   href="#"
-                  className="group relative flex h-1/2 w-1/2 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2"
+                  className="group relative flex h-full w-full items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2"
                 >
                   <Image
-                    src="https://1000logos.net/wp-content/uploads/2020/03/Decathlon-Logo.png"
+                    src="/images/Tetra-Pak-logo.png"
                     alt="Photo by Magicle"
                     className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                     fill
@@ -83,17 +84,29 @@ const TrustedPartner = () => {
                     style={{ objectFit: "contain" }}
                   />
                 </a>
-              <span className="relative font-bold inline-block text-sm text-black md:text-lg">
-                  Decathlon
-                </span>
               </div>
               <div class="row-span-1 bg-[white] h-20 rounded-md flex flex-col items-center justify-center">
-              <a
+                <a
                   href="#"
-                  className="group relative flex h-1/2 w-1/2 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2"
+                  className="group relative flex h-full w-full items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2"
                 >
                   <Image
-                    src="https://1000logos.net/wp-content/uploads/2021/03/Paytm_Logo.jpg"
+                    src="/images/icici_logo.png"
+                    alt="Photo by Magicle"
+                    className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                    fill
+                    priority
+                    style={{ objectFit: "cover" }}
+                  />
+                </a>
+              </div>
+              <div class="row-span-2 h-40 bg-[white]  rounded-md flex flex-col items-center justify-center">
+                <a
+                  href="#"
+                  className="group relative flex h-full w-full items-end overflow-hidden rounded-lg md:col-span-2"
+                >
+                  <Image
+                    src="/images/Paytm-Logo.png"
                     alt="Photo by Magicle"
                     className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                     fill
@@ -101,85 +114,46 @@ const TrustedPartner = () => {
                     style={{ objectFit: "contain" }}
                   />
                 </a>
-                <span className="relative font-bold inline-block text-sm text-black md:text-lg">
-                  Paytm
-                </span>
+              </div>
+              <div class="row-span-2 h-20 bg-[white] rounded-md flex flex-col items-center justify-center">
+               <a
+                  href="#"
+                  className="group relative flex h-full w-full items-end overflow-hidden rounded-lg  md:col-span-2"
+                >
+                  <Image
+                    src="/images/Godrej.png"
+                    alt="Photo by Magicle"
+                    className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                    fill
+                    priority
+                    style={{ objectFit: "contain" }}
+                  />
+                </a> 
               </div>
               <div class="row-span-2 h-40 bg-[white] p-4 rounded-md flex flex-col items-center justify-center">
               <a
                   href="#"
-                  className="group relative flex h-1/2 w-1/2 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2"
+                  className="group relative flex h-full w-full items-end overflow-hidden rounded-lg  md:col-span-2"
                 >
                   <Image
-                    src="https://companieslogo.com/img/orig/IBN_BIG.D-4673bbd8.png?t=1648383607"
+                    src="/images/Laser-logo.png"
                     alt="Photo by Magicle"
                     className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                     fill
                     priority
-                    style={{ objectFit: "contain" }}
+                    style={{ objectFit: "cover" }}
                   />
                 </a>
-              <span className="relative font-bold inline-block text-sm text-black md:text-lg">
-                  ICICI Bank
-                </span>
+                
               </div>
+              <div class="row-span-1 rounded-md bg-[transparent] h-20"></div>
             </div>
-            {/* <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-3 md:grid-rows-4 gap-4 h-5/6 mx-auto w-full bg-[black]">
-              
-              <div class="bg-red-100 ">
-                <span>02</span>
-              </div>
-              <div class="bg-indigo-100 row-span-1 md:row-span-2">
-              <a
-                href="#"
-                className="group relative flex bg-[red] overflow-hidden rounded-lg bg-gray-100 shadow-lg h-80"
-              >
-                <Image
-                  src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-                  alt="Photo by Minh Pham"
-                  className="inset-0 w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                  fill
-                  priority
-                  style={{ objectFit: "contain" }}
-                />
-
-                <span className="relative inline-block text-sm text-white md:text-lg">
-                  VR
-                </span>
-              </a>
-              </div>
-              <div class="bg-red-100 ">
-                <span>07678</span>
-              </div>
-              <div class="bg-purple-100">
-                <span>03</span>
-              </div>
-              
-              <div class="bg-purple-100">
-                <span>03</span>
-              </div>
-             
-              <div class="bg-indigo-100 row-span-1 md:row-span-2">
-                <span>Niche</span>
-              </div>
-              <div class="bg-emerald-100">
-                <span>06</span>
-
-              </div>
-              <div class="bg-emerald-100">
-                <span>06</span>
-              </div>
-              <div class="bg-emerald-100">
-                <span>06</span>
-              </div>
-              
-            </div> */}
           </motion.div>
           {/* Second Div */}
           <motion.div
             variants={fadeIn("down", "tween", 0.2, 1)}
             className={
-              "flex-2 w-1/3 flex justify-center items-center relative "
+              "flex-2 w-1/2 flex justify-center items-center relative "
             }
           >
             <div className="text-center xl:max-w-xl xl:text-left mt-16 xl:mt-0 z-10">
